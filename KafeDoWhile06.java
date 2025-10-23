@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class KafeDoWhile {  // ← Ubah nama class sesuai file
+public class KafeDoWhile06 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         

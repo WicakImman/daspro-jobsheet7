@@ -16,7 +16,6 @@ public class SiakadWhile06 {
             nilai = sc.nextInt();
             
             if (nilai >= 0 && nilai <= 100) {
-                // Update nilai tertinggi dan terendah
                 if (nilai > nilaiTertinggi) {
                     nilaiTertinggi = nilai;
                 }
@@ -24,14 +23,12 @@ public class SiakadWhile06 {
                     nilaiTerendah = nilai;
                 }
                 
-                // Hitung mahasiswa lulus dan tidak lulus
                 if (nilai >= 60) {
                     lulus++;
                 } else {
                     tidakLulus++;
                 }
                 
-                // Tampilkan grade
                 if (nilai >= 80 && nilai <= 100) {
                     System.out.println("Nilai mahasiswa ke-" + (i + 1) + " adalah A");
                     System.out.println("Bagus, pertahankan nilainya!");
@@ -54,7 +51,6 @@ public class SiakadWhile06 {
             }
         }
         
-        // Tampilkan statistik
         System.out.println("\n=== STATISTIK NILAI ===");
         System.out.println("Nilai Tertinggi: " + nilaiTertinggi);
         System.out.println("Nilai Terendah: " + nilaiTerendah);

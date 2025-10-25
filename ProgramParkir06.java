@@ -8,18 +8,15 @@ public class ProgramParkir06 {
         int jenis, durasi, total;
         total = 0;
         
-        System.out.println("=== PROGRAM PERHITUNGAN BIAYA PARKIR ===");
+        System.out.println("MENGHITUNG BIAYA PARKIR");
         System.out.println("Jenis Kendaraan:");
         System.out.println("1 / Mobil");
         System.out.println("2 / Motor");
-        System.out.println("=========================================\n");
         
-        // Loop untuk input parkir
         while (true) {
             System.out.print("Masukkan jenis kendaraan (1/Mobil, 2/Motor, 0/Keluar): ");
             inputJenis = sc.next();
             
-            // Konversi input ke angka
             if (inputJenis.equals("0") || inputJenis.equalsIgnoreCase("Keluar")) {
                 break;
             } else if (inputJenis.equals("1") || inputJenis.equalsIgnoreCase("Mobil")) {
@@ -34,9 +31,7 @@ public class ProgramParkir06 {
             System.out.print("Input durasi parkir (jam): ");
             durasi = sc.nextInt();
             
-            // Hitung biaya berdasarkan durasi dan jenis
             if (durasi > 5) {
-                // Durasi lebih dari 5 jam = tarif tetap 12500
                 total = total + 12500;
                 System.out.println("Biaya parkir: Rp 12500");
             } else if (durasi > 0) {
@@ -57,7 +52,6 @@ public class ProgramParkir06 {
             System.out.println();
         }
         
-        // Tampilkan total
         System.out.println("\n=========================================");
         System.out.println("TOTAL PEMBAYARAN PARKIR: Rp " + total);
         System.out.println("=========================================");

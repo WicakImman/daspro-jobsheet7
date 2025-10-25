@@ -34,11 +34,11 @@ public class TiketBioskop06 {
             double hargaSebelumDiskon = jumlahTiket * hargaPerTiket;
             
             if (jumlahTiket > 10) {
-                diskon = 0.15; // 15%
+                diskon = 0.15; 
             } else if (jumlahTiket > 4) {
-                diskon = 0.10; // 10%
+                diskon = 0.10; 
             } else {
-                diskon = 0; // Tidak ada diskon
+                diskon = 0; 
             }
             
             double potonganDiskon = hargaSebelumDiskon * diskon;

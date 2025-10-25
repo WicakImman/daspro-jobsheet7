@@ -44,7 +44,7 @@ public class TiketBioskop06 {
             double potonganDiskon = hargaSebelumDiskon * diskon;
             double hargaSetelahDiskon = hargaSebelumDiskon - potonganDiskon;
             
-            System.out.println("\n--- Detail Transaksi ---");
+            System.out.println("\nDetail Transaksi");
             System.out.println("Jumlah tiket: " + jumlahTiket);
             System.out.println("Harga sebelum diskon: Rp " + (int)hargaSebelumDiskon);
             
@@ -62,11 +62,11 @@ public class TiketBioskop06 {
             totalHarga += hargaSetelahDiskon;
         }
         
-        System.out.println("========================================");
-        System.out.println("=== TOTAL PENJUALAN HARI INI ===");
+
+        System.out.println("TOTAL PENJUALAN HARI INI");
         System.out.println("Total tiket terjual: " + totalTiket + " tiket");
         System.out.println("Total harga penjualan: Rp " + (int)totalHarga);
-        System.out.println("========================================");
+
         
         sc.close();
     }

@@ -22,7 +22,6 @@ public class SiakadFor06 {
                 terendah = nilai;
             }
             
-            // Cek kelulusan (batas minimal 60)
             if (nilai >= 60) {
                 lulus++;
             } else {
